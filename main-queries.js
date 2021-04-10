@@ -7,7 +7,7 @@ const pool = new Pool ({
   port: 5432
 })
 
-const getUsers = (request, response) => {
+const getSongs = (request, response) => {
   pool.query('SELECT * FROM songs ORDER BY id ASC', (error, results) => {
     if (error) {
       throw error
@@ -17,5 +17,5 @@ const getUsers = (request, response) => {
 }
 
 module.exports = {
-  getUsers
+  getSongs
 }

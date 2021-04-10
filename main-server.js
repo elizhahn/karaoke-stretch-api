@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app  = express();
 const port = 8080;
+const db = require('./main-queries')
 
 app.use(bodyParser.json())
 app.use(
@@ -17,3 +18,5 @@ app.get('/', (request, response) => {
 app.listen(port, () => {
   console.log(`App is running on port ${port}`)
 })
+
+app.get('/songs', db.getSongs)
