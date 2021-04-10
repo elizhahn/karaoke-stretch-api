@@ -4,16 +4,15 @@
   "description": "RESTful API with Node.js, Express, and PostgreSQL",
   "main": "server.js",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "pg": "^8.5.1"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/elizhahn/karaoke-stretch-api.git"
