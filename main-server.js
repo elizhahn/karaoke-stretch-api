@@ -14,7 +14,7 @@ app.use(
 );
 app.use(cors())
 
-
+console.log(process.env.DATABASE_UL)
 const getSongs = (request, response) => {
   pool.query('SELECT * FROM songs', (error, results) => {
     if (error) {
