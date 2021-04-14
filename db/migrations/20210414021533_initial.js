@@ -11,7 +11,8 @@ exports.up = function(knex) {
     })
 
     .createTable('genres', function (table) {
-      table.increments('song_id').foreign();
+      table.integer('song_id').unsigned();
+      table.foreign('song_id').references('songs.id');
       table.boolean('Electronica');
       table.boolean('Alternative');
       table.boolean('Pop');
