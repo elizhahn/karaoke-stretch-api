@@ -29,14 +29,14 @@ app.use(cors())
 //   })
 // }
 
-// const getGenres = (request, response) => {
-//   pool.query('SELECT * FROM genres', (error, results) => {
-//     if (error) {
-//       throw error;
-//     }
-//     response.status(200).json(results.rows)
-//   })
-// }
+const getGenres = (request, response) => {
+  pool.query('SELECT * FROM genres', (error, results) => {
+    if (error) {
+      throw error;
+    }
+    response.status(200).json(results.rows)
+  })
+}
 
 app.get('/api/v1/songs', async (request, response) => {
   try {
