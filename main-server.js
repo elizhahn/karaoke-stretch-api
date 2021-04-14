@@ -38,7 +38,7 @@ const getGenres = (request, response) => {
   })
 }
 
-app.get('/api/v1/songs', async (request, response) => {
+app.get('/songs', async (request, response) => {
   try {
     const songs = await database('songs').select();
     response.status(200).json(songs);
@@ -47,7 +47,7 @@ app.get('/api/v1/songs', async (request, response) => {
   }
 });
 
-app.get('/api/v1/genres', async (request, response) => {
+app.get('/genres', async (request, response) => {
   try {
     const genres = await database('genres').select();
     response.status(200).json(genres);
