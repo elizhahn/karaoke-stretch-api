@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const { request } = require('http');
-// const { response } = require('express');
-// const { error } = require('console');
+const { request } = require('http');
+const { response } = require('express');
+const { error } = require('console');
 const app  = express();
 const port = process.env.PORT || 8080;
 const environment = process.env.NODE_ENV || 'development';
@@ -27,6 +27,23 @@ app.get('/songs', async (request, response) => {
     response.status(500).json({ error });
   }
 });
+
+app.get('/songs/:id', async (request, response) => {
+  try {
+    const songs = await database('songs').where('id', request.params.id).select();
+    if(songs.length) {
+      response.status(200).json(songs);
+  } else {
+      response.status(404).json({ 
+        error: `Could not find song with id ${request.params.id}`
+      });
+    }
+  } catch (error) {
+    response.status(500).json({error});
+  }
+});
+
+
 
 app.get('/genres', async (request, response) => {
   try {
