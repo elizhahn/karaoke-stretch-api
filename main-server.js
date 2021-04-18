@@ -19,15 +19,6 @@ app.use(
 );
 app.use(cors())
 
-const getGenres = (request, response) => {
-  pool.query('SELECT * FROM genres', (error, results) => {
-    if (error) {
-      throw error;
-    }
-    response.status(200).json(results.rows)
-  })
-}
-
 app.get('/songs', async (request, response) => {
   try {
     const songs = await database('songs').select();
