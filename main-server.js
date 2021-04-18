@@ -1,16 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const { pool } = require('./config');
-const { request } = require('http');
-const { response } = require('express');
-const { error } = require('console');
+// const { request } = require('http');
+// const { response } = require('express');
+// const { error } = require('console');
 const app  = express();
 const port = process.env.PORT || 8080;
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
-// const db = require('./main-queries')
+
 
 app.use(bodyParser.json())
 app.use(
@@ -19,15 +18,6 @@ app.use(
   })
 );
 app.use(cors())
-
-// const getSongs = (request, response) => {
-//   pool.query('SELECT * FROM songs', (error, results) => {
-//     if (error) {
-//       throw error;
-//     }
-//     response.status(200).json(results.rows)
-//   })
-// }
 
 const getGenres = (request, response) => {
   pool.query('SELECT * FROM genres', (error, results) => {
@@ -60,7 +50,6 @@ app.get('/', (request, response) => {
   response.json({ test: `Home GET request is functioning properly` })
 });
 
-// app.get('/songs', getSongs)
 
 app.listen(port, () => {
   console.log(`App is running on port ${port}`)
