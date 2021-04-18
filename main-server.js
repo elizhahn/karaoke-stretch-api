@@ -43,7 +43,15 @@ app.get('/songs/:id', async (request, response) => {
   }
 });
 
-
+app.get('/:id/genres', async (request, response) => {
+  const { id } = request.params;
+  try {
+    const genres = await database('genres').where({song_id: id})
+      response.status(200).json(genres);
+  } catch (error) {
+    response.status(500).json({error});
+  }
+});
 
 app.get('/genres', async (request, response) => {
   try {
