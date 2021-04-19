@@ -76,7 +76,7 @@ All API endpoints (also known as “routes”) are prefixed with https://carryok
 
 | Purpose               | URL           | Verb          | Request Body        | Sample Response (Happy Path) |
 | :---                  |    :----:     |      :----:   |     :----:          |                         ---: |
-| Get all songs         | `/songs`      | GET           | N/A                 | All songs in database: [{"id":15,"title":"Jigsaw falling into place","artist":"Radiohead","album_cover":"https://www.nme.com/wp-content/uploads/2016/09/62_radiohead-1.jpg","created_at":"2021-04 -18T22:16:50.063Z","updated_at":"2021-04-18T22:16:50.063Z"}, ...]
+| Get all songs         | `/songs`      | GET           | N/A                 | All songs in database: [{"id":15,"title":"Jigsaw falling into place","artist":"Radiohead","album_cover":"https://www.nme.com/wp- content/uploads/2016/09/62_radiohead-1.jpg","created_at":"2021-04-18T22:16:50.063Z","updated_at":"2021-04-18T22:16:50.063Z"}, ...]
 | Get all genres        | `/genres`     | GET           | N/A                 | All genres from relational table: [{"song_id":15,"Electronica":true,"Alternative":false,"Pop":false,"Dance":false,"Hip Hop":false,"Rap":false,"R&B":false,"Country":false,"Rock":true,"Metal":false,"created_at":"2021-04-18T22:16:50.079Z","updated_at":"2021-04-18T22:16:50.079Z","id":9}, ...]
 | Get genres by song id | `/:id/genres` | GET           | N/A                 | An individual song's genres: [{"song_id":15,"Electronica":true,"Alternative":false,"Pop":false,"Dance":false,"Hip Hop":false,"Rap":false,"R&B":false,"Country":false,"Rock":true,"Metal":false,"created_at":"2021-04-18T22:16:50.079Z","updated_at":"2021-04-18T22:16:50.079Z","id":9}] 
 
