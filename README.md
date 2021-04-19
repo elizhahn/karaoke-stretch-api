@@ -1,4 +1,4 @@
-# CarryOkay
+# CarryOkay API
 
 Deployed Database: [CarryOkay Database](https://carryokay-server.herokuapp.com/)
 
