@@ -74,7 +74,7 @@ To take a look at the application this repo corresponds to, checkout the smash h
 
 | Purpose     | URL         | Verb          | Request Body        | Sample Response (Happy Path) |
 | :---        |    :----:   |      :----:   |     :----:          |                         ---: |
-| Get all songs     | /songs       | GET   | N/A | All movies in database with average rating: {"movies": [{id: 1, title: "Movie Title", poster_path: "someURL", backdrop_path: "someURL", release_date: "2019-12-04", overview: "Some overview", average_rating: 6 }, ...]}
+| Get all songs     | `/songs`       | GET   | N/A                | All songs in database: {"movies": [{id: 1, title: "Movie Title", poster_path: "someURL", backdrop_path: "someURL", release_date: "2019-12-04", overview: "Some overview", average_rating: 6 }, ...]}
 | Paragraph   | Text        | And more      |
 
 ## Future Iterations
