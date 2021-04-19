@@ -1,8 +1,6 @@
 # CarryOkay
 
-
-# README concisely communicates the team’s individual and joint learning goals, the evolution of the project, and team member reflections while using good formatting to enhance readability
-# README links to all user GitHub profiles and any applicable repos/deployed sites
+Deployed Database: [CarryOkay Database](https://carryokay-server.herokuapp.com/)
 
 This is a Mod 3 [Front-End Project](https://frontend.turing.io/projects/module-3/stretch.html) by [Elizabeth Hahn](https://github.com/elizhahn), [Jessica Justice](https://github.com/m1073496), [Marika Shanahan](https://github.com/monshan).
 
@@ -38,20 +36,6 @@ To take a look at the application this repo corresponds to, checkout the smash h
  - How to create a database / understand how a database works / how to hook it up with the front-end
  - How to deploy the site (full stack)
  - We'll know we're successful when we produce a fully-functional app and we all feel comfortable with our new technologies
-  
-  ### Individual Goals
-  
-    Elizabeth
-      - Understand our back-end technologies
-      - Practice automated testing with Cypress
-
-    Jessica
-      - Understand our back-end technologies
-      - Get more comfortable with styling
-    
-    Marika
-      - Understand our back-end technologies
-      - Practice building an app with React.js
 
 
 ## Tech Stack
@@ -82,5 +66,5 @@ All API endpoints (also known as “routes”) are prefixed with https://carryok
 
 ## Future Iterations
 
-  - Create endpoints to complete CRUD --> we would need a POST, PUT and DELETE request, ideally for creating new databases to store new users' data, update that data, or delete the data altogether
+  - Create endpoints to complete CRUD --> we would need a POST, PUT and DELETE request, ideally for creating new PostgreSQL tables to store new users' data, update that data, or delete the data altogether
   - Find a way to utilize the GET request that returns an individual song's set of genres
