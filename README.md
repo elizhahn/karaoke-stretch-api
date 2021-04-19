@@ -13,7 +13,7 @@ CarryOkay: the app you carry, the app that makes everything okay, the app for ka
 
 ## Tech Stack
 
-### Front-End:
+### [Front-End](https://github.com/elizhahn/karaoke-stretch/blob/main/README.md):
 - JavaScript ECMA6
   - React (create-react-app)
   - React Router
@@ -21,7 +21,7 @@ CarryOkay: the app you carry, the app that makes everything okay, the app for ka
 - CSS3
   - SASS / SCSS
 
-### [Back-End](https://github.com/elizhahn/karaoke-stretch/blob/main/README.md):
+### Back-End:
 - Node.js
   - Express.js
 - PostgresSQL
