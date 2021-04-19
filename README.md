@@ -11,6 +11,7 @@ This is a Mod 3 [Front-End Project](https://frontend.turing.io/projects/module-3
 5. [Tech Stack](#tech-stack)
 7. [API Documentation](#api-documentation)
 9. [Future Iterations](#future-iterations)
+10. [Project Reflections](#project-reflections)
 
 
 ## Project Overview
@@ -68,3 +69,17 @@ All API endpoints (also known as “routes”) are prefixed with https://carryok
 
   - Create endpoints to complete CRUD --> we would need a POST, PUT and DELETE request, ideally for creating new PostgreSQL tables to store new users' data, update that data, or delete the data altogether
   - Find a way to utilize the GET request that returns an individual song's set of genres
+
+## Project Reflections
+
+### Challenges
+
+  - Learning PostgreSQL and Knex.js in a week 😬
+  - Deploying our back-end to Heroku
+
+### Wins
+
+  - This was an awesome team, and a really enjoyable experience overall
+  - Communication was solid
+  - Paired-programming really got us through the heavy lifts that came with learning these new technologies
+  - Building out and deploying a full-stack application that is fully tested and 100% accessible
