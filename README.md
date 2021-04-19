@@ -1,9 +1,11 @@
 # CarryOkay API
 
-Deployed Database: [CarryOkay Database](https://carryokay-server.herokuapp.com/)
-## Deployed App: [CarryOkay]()
-
 This is a Mod 3 [Front-End Project](https://frontend.turing.io/projects/module-3/stretch.html) by [Elizabeth Hahn](https://github.com/elizhahn), [Jessica Justice](https://github.com/m1073496), [Marika Shanahan](https://github.com/monshan).
+
+### Deployed Database: [CarryOkay Database](https://carryokay-server.herokuapp.com/)
+### Deployed App: [CarryOkay]()
+
+## Outline
 
 1. [Project Overview](#project-overview)
 2. [App Overview](#app-overview)
