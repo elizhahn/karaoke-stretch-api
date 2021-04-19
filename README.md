@@ -81,3 +81,6 @@ All API endpoints (also known as “routes”) are prefixed with https://carryok
 | Get genres by song id | `/:id/genres` | GET           | N/A                 | An individual song's genres: [{"song_id":15,"Electronica":true,"Alternative":false,"Pop":false,"Dance":false,"Hip Hop":false,"Rap":false,"R&B":false,"Country":false,"Rock":true,"Metal":false,"created_at":"2021-04-18T22:16:50.079Z","updated_at":"2021-04-18T22:16:50.079Z","id":9}] 
 
 ## Future Iterations
+
+  - Create endpoints to complete CRUD --> we would need a POST, PUT and DELETE request, ideally for creating new databases to store new users' data, update that data, or delete the data altogether
+  - Find a way to utilize the GET request that returns an individual song's set of genres
