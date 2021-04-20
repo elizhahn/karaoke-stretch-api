@@ -23,7 +23,7 @@ The goal of this project was to self-teach back-end technologies by creating a d
 
 ## App Overview
 
-To take a look at the application this repo corresponds to, checkout the smash hit karaoke app [CarryOkay](https://github.com/elizhahn/karaoke-stretch)
+To take a look at the application this repo corresponds to, checkout the smash hit karaoke app [CarryOkay](https://github.com/elizhahn/karaoke-stretch).
 
 ## Planning Resources 
 
